@@ -1,0 +1,219 @@
+<!--LEVEL 3, TASK 5 - VERSION CONTROL III: DEPLOYMENT OF STATIC WEBSITES
+
+INSTRUCTIONS:
+- Create a html page called index.html that will act as your online CV
+- Include a short bio, a list of your skills, any work experience & links to any blog posts/articles that you have written
+- Style webpage with CSS
+- Upload to to your respository on Githup and deploy your webpage-->
+
+<!--REFERENCES
+-Reused code from level 2, task 16    
+-W3schools.com, they helped me figure out how to make a photograph the background of the webpage
+-https://www.w3schools.com/cssref/css3_pr_background-size.php 
+-W3schools.com, they helped me style my picture
+-https://www.w3schools.com/css/css3_images.asp 
+-W3schools.com, helped me with text alignment
+-https://www.w3schools.com/cssref/css3_pr_text-align-last.php 
+-mozilla.org, helped me understand how to manipulate the page layout
+-https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction-->
+
+
+<!DOCTYPE html>
+
+<!--open page and declare language-->
+<html lang="en">
+<!--open head section-->
+<head>
+    <!--declare encoding-->
+    <meta charset="UTF-8">
+    <!--declare style-->
+    <style>
+
+        body{
+            background-image: url('cloud.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        h1{
+            font-size: x-large;
+            font-family: 'Times New Roman';
+            color:black;
+        }
+
+        h2{
+            font-size: x-large;
+            font-family:'Times New Roman';
+            color:black; 
+        }
+        p{
+            border:2px solid #090909;
+            font-size:x-large;
+            font-family: 'Times New Roman'; 
+            color:black; 
+            text-align:left;
+            text-align-last: left;
+        }
+
+        ul{ 
+            border: 2px solid #090909;
+            font-size: x-large;
+            font-family: 'Times New Roman';
+            color:black;
+            text-align: left;
+            text-align-last:auto;
+        }
+
+        img{
+            border: 1px solid #090909;
+            max-width: 100%;
+            height: auto;
+            filter:brightness();
+        }
+
+        a{
+            font-size:x-large;
+            font-family: 'Times New Roman';
+            color: black;
+        }
+
+       .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50px 25px;
+        gap: 10px;
+       }
+
+       .box1{
+        grid-column: 2/5;
+        grid-row: 1;
+       }
+
+       .box2 {
+        grid-column: 1;
+        grid-row: 1/3;
+        }
+
+        .box3{
+            grid-column: 3/5;
+            grid-row: auto;
+        }
+
+        .box4{
+            grid-column: 1/3;
+            grid-row: 3;
+        }
+
+        .box5{
+            grid-column:2/3;
+            grid-row: 1;
+        }
+
+
+    </style>
+    <!--create title of webpage-->
+    <title>Becca's CV</title>
+</head> <!--close head section-->
+
+<!--open body section-->
+<body>
+    <div class="wrapper">
+    <!--welcome heading-->
+    <div class="box1"><h1><b>Welcome!</b></h1>
+    <!--welcome paragraph-->
+    <p> Hello! Welcome to my webpage! Thank you for visiting! My name is Rebecca Naude
+        and I'm learning to code. Let me tell you more about myself! 
+    </p></div>
+    </div>
+    
+    <div class="wrapper">
+    <!--Picture of Me-->
+    <div class="box2"><img src="becca and scarlet(edited)2.jpg"
+        alt="a photograph of myself and my cat, Scarlet"/></div>
+    </div>    
+    
+    <div class="wrapper">
+    <!--Education--> 
+    <div class="box3"><h2><b>Education</b></h2>
+    <ul>
+        <li>Matriculated from Northcliff Highschool 
+            with a distinction in Visual Art (2015)</li>
+        <li>Earned a BA from UNISA, 
+            majouring in Anthropology and Hisotry (2017-2022)</li>
+        <li>Currently completing HyperionDev's 
+            software engineer bootcamp (2023)</li>
+    </ul>
+ 
+     <!--Skills-->
+    <h2><b>My Skills</b></h2>
+    <p> Here is a list 
+        of some of my skills: 
+    </p>
+    <ul> 
+        <li>Python</li>          
+        <li>HTML</li>
+        <li>SQL</li>
+        <li>SQLite</li>
+        <li>critical thinking</li>
+        <li>the ability to assess conflicting interpretations</li>
+        <li>the ability to assess past examples of change</li>
+        <li>analytical reading</li>
+        <li>the ability to write cognetly</li>
+        <li>careful record keeping</li>
+    </ul> 
+
+    <!--Contact details-->
+    <h2><b>Contact details</b></h2>
+    <p> If you would like to talk you can
+         contact me via email at beccanaude@gmail.com </p>
+         
+    <!--second picture-->
+    <h2>My Insterests/Hobbies!</h2>
+        <ul>
+            <li>drawing</li>
+            <li>painting (specifically watercolour)</li>
+            <li>knitting</li>
+            <li>embroidery</li>
+            <li>crochet</li>
+            <li>reading</li>
+            <li>history</li>
+        </ul></div>
+    </div>
+
+    <div class="wrapper">
+    <!--Links-->
+    <div class="box5"><h2><b>Some cool links!</b></h2>
+    <a href = "http://www.hyperiondev.com">This is where I am learning to program!</a></div>
+    </div>
+
+    <!--about me heading-->
+    <div class="wrapper">
+    <div class="box4"><h2><b>About Me</b></h2>
+    <!--about me paragraph-->
+    <p> Becca, she/her, 26, South African, and I currently live in Cape Town, South Africa with my family. 
+        I am very new to the programming and the tech world as I only began my studies in this field earlier
+        this year (2023). I am a bit of a hisotry buff and I studied it in highschool and in university. 
+        I am also really into art, especially drawing and watercolour, and I also love knitting and embroidery,
+        and am learning how to crochet and would like to learn how to sew in the future. I also spend way 
+        to much time online, scrolling through Twitter or Tumblr, and watching long-form youtube videos
+        on a variety of subjects.
+    </p>
+
+    <p>As stated above, I am very new to the tech world - I only began studying programming earlier this year (2023).
+        I never even thought to try my hand at programming becuase in highschool it was always stressed to us that in order to be 
+        good at programming you had to have very good maths marks, and maths was not one of my strongest subject, so 
+        that door had always seemed to be closed to me. However, my mom has always insisted that you didn't need high
+        maths marks to learn to code, you just needed to have a good understanding of logic. This still didn't get me 
+        excited about coding becuase to me it seemed that maths and logic were pretty intertwined together as concepts
+        and since I wasnt very confident in my mathematical abilities I felt that I probably wasn't a very logical 
+        person either. My mind began to change when I watched my mom take part in the HyperionDev software engineerring
+        bootcamp in 2022. I decided to try and do the free trial HyperionDev offered and found that I really enjoyed
+        learning how to code, and that I was also kind of good at it! So at the beginning of this year I signed up for
+        the bootcamp and began my journy towards becoming a software engineer in February! I am really enjoying my self
+        and am looking foward to finding a career in this field!
+      
+    </p></div>
+    </div>
+    
+</body>
+</html>

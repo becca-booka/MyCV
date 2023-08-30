@@ -9,6 +9,7 @@ In this task we had to create a CV-like webpage using html and CSS and then uplo
 You will need the following in order to intsall this project:
 * Internect connection
 * a code editor, such as [Visual Studio Code](https://code.visualstudio.com/download)
+* git, you can download it [here](https://git-scm.com/downloads)
 
 #### _**Usage**_
 This project was created to help me learn how to use CSS. The following images show what the webpage looks like when deployed.
